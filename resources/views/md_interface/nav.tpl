@@ -8,7 +8,7 @@
 					<a class="collapsed waves-attach" href="/auth/register">注册/register</a>
 					<a class="collapsed waves-attach" href="/auth/login">登陆/login</a>
 					<a class="collapsed waves-attach" href="/tos">用户协议/TOS</a>
-					<a class="collapsed waves-attach" data-toggle="collapse" href="#ui_menu_link">友情链接/Link</a>
+					<!--a class="collapsed waves-attach" data-toggle="collapse" href="#ui_menu_link">友情链接/Link</a>
 					<ul class="menu-collapse collapse" id="ui_menu_link">
 						<li>
 							<a class="waves-attach" href="/">~~~</a>
@@ -16,7 +16,7 @@
 						<li>
 							<a class="waves-attach" href="/">~~~</a>
 						</li>
-					</ul>
+					</ul-->
 				</li>
 			</ul>
 		</div>
