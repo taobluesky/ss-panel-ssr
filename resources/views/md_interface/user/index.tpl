@@ -130,7 +130,7 @@
 								</div>
 							</div>
 						</div>
-						<h3 class="h5">節點列表</h3>
+						<h3 class="h5">节点列表</h3>
 						<div class="card">
 							<div class="card-main">
 								<div class="card-inner">
@@ -156,11 +156,11 @@
 																<table class="table">
 																	<tbody>
 																		<tr>
-																			<td>狀態</td>
+																			<td>状态</td>
 																			<td>{if $node->getNodeError() eq 'false'}离线{else}{$node->status}{/if}</td>
 																		</tr>
 																		<tr>
-																			<td>在綫人數</td>
+																			<td>在线人数</td>
 																			<td>{$node->getOnlineUserCount()}</td>
 																		</tr>
 																		<tr>
@@ -168,11 +168,11 @@
 																			<td>{$node->traffic_rate}</td>
 																		</tr>
 																		<tr>
-																			<td>產生流量</td>
+																			<td>产生流量</td>
 																			<td>{$node->getTrafficFromLogs()}</td>
 																		</tr>
 																		<tr>
-																			<td>在綫時間</td>
+																			<td>在线时间</td>
 																			<td>{$node->getNodeUptime()}</td>
 																		</tr>
 																		<tr>
@@ -212,7 +212,7 @@
 	    {md5($config["version"])}
 	</div>
 </footer>
-<div class="fbtn-container">
+<!--div class="fbtn-container">
 	<div class="fbtn-inner">
 		<a class="fbtn fbtn-lg fbtn-brand-accent waves-attach waves-circle waves-light" data-toggle="dropdown"><span class="fbtn-text fbtn-text-left">Links</span><span class="fbtn-ori icon">apps</span><span class="fbtn-sub icon">close</span></a>
 		<div class="fbtn-dropup">
@@ -221,7 +221,7 @@
 			<a class="fbtn fbtn-green waves-attach waves-circle" href="https://www.bydisk.com/" target="_blank"><span class="fbtn-text fbtn-text-left">Visit our Website</span><span class="icon">link</span></a>
 		</div>
 	</div>
-</div>
+</div-->
 <!-- ===node_info==== -->
 {foreach $nodes as $node}
 	<div aria-hidden="true" class="modal modal-va-middle fade" id="ui_dialog_node_{$node->id}" role="dialog" tabindex="-3">
@@ -441,7 +441,7 @@
 				    <label class="floating-label" for="method"></label>
 				    <select class="form-control" id="method">
 				        <option value="{$user->method}"> 当前:{$user->method}</option>
-					<option value="none">无加密/null</option>
+					<option value="none">无加密/none</option>
 				        <option value="aes-128-cfb">AES-128-CFB</option>
 					<option value="aes-192-cfb">AES-192-CFB</option>
 					<option value="aes-256-cfb">AES-256-CFB</option>
@@ -482,10 +482,10 @@
 				    <select class="form-control" id="SSRProtocol">
 				        <option value="{$user->protocol}">当前:{$user->protocol}</option>
 					<option value="origin">origin(无验证)</option>
-					<option value="auth_sha1_v4_compatible">auth_sha1_v4(兼容SS/SSR)</option>
-					<option value="auth_aes128_md5">auth_aes128_md5(只支持SSR OnlySSR)</option>
-					<option value="auth_aes128_sha1">auth_aes128_sha1(只支持SSR OnlySSR)</option>
-					<option value="auth_chain_a">auth_chain_a(只支持SSR OnlySSR)</option>
+					<option value="auth_sha1_v4_compatible">auth_sha1_v4(兼容SS/SSR)(不建议)</option>
+					<option value="auth_aes128_md5">auth_aes128_md5(只支持SSR OnlySSR)(推荐)</option>
+					<option value="auth_aes128_sha1">auth_aes128_sha1(只支持SSR OnlySSR)(推荐)</option>
+					<option value="auth_chain_a">auth_chain_a(只支持SSR OnlySSR)(强烈推荐)</option>
 				    </select>
 				</div>
 			</div>
