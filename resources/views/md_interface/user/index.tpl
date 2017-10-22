@@ -365,10 +365,10 @@
 	<div class="modal-dialog modal-xs">
 		<div class="modal-content">
 			<div class="modal-heading">
-				<p class="modal-title">网站登陆密码修改</p>
+				<p class="modal-title">网站登录密码修改</p>
 			</div>
 			<div class="modal-inner">
-				<p class="h5 margin-top-sm text-black-hint">网站登陆密码修改</p>
+				<p class="h5 margin-top-sm text-black-hint">网站登录密码修改</p>
 				<div class="form-group form-group-label">
 					<div class="row">
 						<div class="col-md-10 col-md-push-1">

@@ -57,7 +57,7 @@
 										<div class="form-group">
 											<div class="row">
 												<div class="col-md-10 col-md-push-1">
-													<a class="btn btn-block btn-pink waves-attach waves-light" id="login">登陆/Sign In</a>
+													<a class="btn btn-block btn-pink waves-attach waves-light" id="login">登录/Sign In</a>
 												</div>
 											</div>
 										</div>

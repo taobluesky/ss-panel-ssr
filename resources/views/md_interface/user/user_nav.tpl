@@ -58,7 +58,7 @@
 					</a>
 					<ul class="menu-collapse collapse" id="ui_menu_account">
 						<li>
-							<a class="waves-attach" data-backdrop="static" data-toggle="modal" href="#ui_dialog_passwd">登陆密码设置/Login Password</a>
+							<a class="waves-attach" data-backdrop="static" data-toggle="modal" href="#ui_dialog_passwd">登录密码设置/Login Password</a>
 						</li>
 						<li>
 							<a class="waves-attach" data-backdrop="static" data-toggle="modal" href="#ui_dialog_ga">二次验证设置/2step Auth</a>
