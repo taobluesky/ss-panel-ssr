@@ -207,8 +207,13 @@ class Tools
     }
 	
     public static function base64_url_encode($input) {
-	return strtr(base64_encode($input), '+/', '-_');
+        return strtr(base64_encode($input), '+/', '-_');
     }
+    
+    public static function base64_nopadding_url_encode($input) {
+        return str_replace(array('+','/','='), array('-','_',''), base64_encode($input));
+    }
+    
     public static function base64_url_decode($input) {
 		return base64_decode(strtr($input, '-_', '+/'));
     }
