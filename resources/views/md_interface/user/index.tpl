@@ -138,13 +138,13 @@
 									<p>
 										{$node_msg}
 										<p>
-											<a class="btn btn-flat collapsed waves-attach" data-toggle="collapse" href="#ui_collapse_node">
+											<a class="btn btn-flat waves-attach" data-toggle="collapse" href="#ui_collapse_node">
 												<span class="collapsed-hide">收起/Collapse</span>
 												<span class="collapsed-show">展开/Expand</span>
 											</a>
 										</p>
 									</p>
-									<div class="collapsible-region collapse" id="ui_collapse_node">
+									<div class="collapsible-region collapse in" id="ui_collapse_node">
 									{foreach $nodes as $node}
 										<div class="col-md-6 col-sm-6 margin-top">
 											<div class="card">
@@ -204,9 +204,8 @@
 	</main>
 <footer class="ui-footer">
 	<div class="container">
-		<!--支持开源 请勿删除页脚作者信息-->
 		<strong>Copyright © {date("Y")} <b>{$config["appName"]}</b> </strong>
-		All rights reserved. Powered by <a href="javascript:void(0);">SS-Panel-SSR</a> | <a href="/tos">服务条款 </a>
+		All rights reserved. Powered by <a href="javascript:void(0);">NULL</a> | <a href="/tos">服务条款 </a>
 	</div>
 	<div style="display:none;">
 	    {md5($config["version"])}
