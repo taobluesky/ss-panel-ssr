@@ -190,7 +190,7 @@
 														</div>
                                                         
                                                         <div class="card-action-btn pull-right">
-                                                            {if user->hasSsrSetting()}
+                                                            {if $user->hasSsrSetting()}
 															<a id="node_ssrqrcode_{$node->id}" class="btn btn-flat waves-attach" data-backdrop="static" >二维码/QR</a>
                                                             {else}
                                                             <a id="node_qrcode_{$node->id}" class="btn btn-flat waves-attach" data-backdrop="static" >二维码/QR</a>
@@ -272,7 +272,7 @@
 					<p class="text-right">
                     <a id="node_sugre_{$node->id}" class="btn btn-flat btn-brand-accent waves-attach">Sugre</a>
                     <a id="node_ssrqrcode_{$node->id}" class="btn btn-flat btn-brand-accent waves-attach">SSR二维码</a>
-                    {if !user->hasSsrSetting()}
+                    {if !$user->hasSsrSetting()}
                     <a id="node_qrcode_{$node->id}" class="btn btn-flat btn-brand-accent waves-attach">SS二维码</a>
                     {/if}
                     <a class="btn btn-flat btn-brand-accent waves-attach" data-dismiss="modal">关闭</a></p>
