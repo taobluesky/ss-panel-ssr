@@ -191,9 +191,9 @@
                                                         
                                                         <div class="card-action-btn pull-right">
                                                             {if $user->hasSsrSetting()}
-															<a id="node_ssrqrcode_{$node->id}" class="btn btn-flat waves-attach" data-backdrop="static" >二维码/QR</a>
+															<a id="node_ssrqrcode_{$node->id}" class="btn btn-flat waves-attach" data-backdrop="static" >SSR二维码/SSR QR</a>
                                                             {else}
-                                                            <a id="node_qrcode_{$node->id}" class="btn btn-flat waves-attach" data-backdrop="static" >二维码/QR</a>
+                                                            <a id="node_qrcode_{$node->id}" class="btn btn-flat waves-attach" data-backdrop="static" >SS二维码/SS QR</a>
                                                             {/if}
 														</div>
 													</div>
