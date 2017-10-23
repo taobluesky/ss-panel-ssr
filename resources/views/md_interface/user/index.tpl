@@ -186,10 +186,10 @@
 													</div>
 													<div class="card-action">
 														<div class="card-action-btn pull-left">
-															<a class="btn btn-flat waves-attach" data-backdrop="static" data-toggle="modal" href="#ui_dialog_node_{$node->id}">详细信息/More</a>
+															<a class="btn btn-pink waves-attach waves-light waves-effect" data-backdrop="static" data-toggle="modal" href="#ui_dialog_node_{$node->id}">详细信息/More</a>
 														</div>
                                                         
-                                                        <div class="card-action-btn pull-right">
+                                                        <div class="card-action-btn pull-left">
                                                             {if $user->hasSsrSetting()}
 															<a id="node_ssrqrcode_{$node->id}" class="btn btn-pink waves-attach waves-light waves-effect" data-backdrop="static" >扫二维码/SCAN QR</a>
                                                             {else}
