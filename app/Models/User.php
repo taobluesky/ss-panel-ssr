@@ -187,4 +187,8 @@ class User extends Model
         return InviteCode::where('user_id', $uid)->get();
     }
 
+    public function hasSsrSetting()
+    {
+        return ($this->attributes['protocol'] != 'origin' || $this->attributes['obfs'] != 'plain');
+    }
 }
