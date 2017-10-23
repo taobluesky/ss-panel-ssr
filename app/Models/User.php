@@ -39,8 +39,12 @@ class User extends Model
 
     public function getGravatarAttribute()
     {
+		/*
         $hash = md5(strtolower(trim($this->attributes['email'])));
         return "https://cdn.v2ex.com/gravatar/$hash";
+		*/
+		// 报告我并没有注册过v2ex账号 ToT
+		return "/assets/md-interface/images/users/my_avatar.jpg";
     }
 
     public function isAdmin()
