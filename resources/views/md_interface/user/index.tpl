@@ -191,9 +191,9 @@
                                                         
                                                         <div class="card-action-btn pull-left">
                                                             {if $user->hasSsrSetting()}
-															<a id="node_ssrqrcode_{$node->id}" class="btn btn-pink waves-attach waves-light waves-effect" data-backdrop="static" >扫二维码/SCAN QR</a>
+															<a id="quick_node_ssrqrcode_{$node->id}" class="btn btn-pink waves-attach waves-light waves-effect" data-backdrop="static" >扫二维码/SCAN QR</a>
                                                             {else}
-                                                            <a id="node_qrcode_{$node->id}" class="btn btn-pink waves-attach waves-light waves-effect" data-backdrop="static" >扫二维码/SCAN QR</a>
+                                                            <a id="quick_node_qrcode_{$node->id}" class="btn btn-pink waves-attach waves-light waves-effect" data-backdrop="static" >扫二维码/SCAN QR</a>
                                                             {/if}
 														</div>
 													</div>
@@ -279,7 +279,7 @@
 				</div>
 				<script type="text/javascript">
 					$(document).ready(function (){
-						$("#node_qrcode_{$node->id}").click(function () {
+						$("#node_qrcode_{$node->id},#quick_node_qrcode_{$node->id}").click(function () {
 							$.ajax({
 								type: "POST",
 								url: "/user/nodeqrcode/{$node->id}",
@@ -307,7 +307,7 @@
 								}
 							})
 						})
-						$("#node_ssrqrcode_{$node->id}").click(function () {
+						$("#node_ssrqrcode_{$node->id},#quick_node_ssrqrcode_{$node->id}").click(function () {
 							$.ajax({
 								type: "POST",
 								url: "/user/nodeqrcode/{$node->id}",
