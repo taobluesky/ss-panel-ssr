@@ -1,6 +1,6 @@
 {include file='header.tpl'}
-<body class="page-pink">
-	<header class="header header-pink ui-header">
+<body class="page-brand">
+	<header class="header header-brand ui-header">
 		<ul class="nav nav-list pull-left">
 			<li>
 				<a data-toggle="menu" href="#ui_menu">
@@ -75,9 +75,9 @@
 											<div class="row">
 												<div class="col-md-10 col-md-push-1">
 													{if $requireEmailVerification}
-													<a class="btn btn-block btn-pink waves-attach waves-light" data-backdrop="static" data-toggle="modal" href="#ui_dialog_mailcheck">下一步/NextStep</a>
+													<a class="btn btn-block btn-brand waves-attach waves-light" data-backdrop="static" data-toggle="modal" href="#ui_dialog_mailcheck">下一步/NextStep</a>
 													{else}
-													<a class="btn btn-block btn-pink waves-attach waves-light" data-backdrop="static" data-toggle="modal" href="#ui_dialog_tos">下一步/NextStep</a>
+													<a class="btn btn-block btn-brand waves-attach waves-light" data-backdrop="static" data-toggle="modal" href="#ui_dialog_tos">下一步/NextStep</a>
 													{/if}
 												</div>
 											</div>
@@ -87,8 +87,8 @@
 							</div>
 						</div>
 						<div class="clearfix">
-							<p class="margin-no-top pull-left"><a class="btn btn-pink waves-attach" href="/password/reset">忘记密码?</a></p>
-							<p class="margin-no-top pull-right"><a class="btn btn-pink waves-attach" href="/auth/login">已有账号</a></p>
+							<p class="margin-no-top pull-left"><a class="btn btn-brand waves-attach" href="/password/reset">忘记密码?</a></p>
+							<p class="margin-no-top pull-right"><a class="btn btn-brand waves-attach" href="/auth/login">已有账号</a></p>
 						</div>
 					</section>
 				</div>
@@ -97,7 +97,7 @@
 	</main>
 	<footer class="ui-footer">
 		<div class="container">
-			<p>SS-Panel-SSR</p>
+			<p>by hellotimo</p>
 		</div>
 	</footer>
 {if $requireEmailVerification}
@@ -119,9 +119,9 @@
 				<p class="h5 margin-top-sm text-black-hint">请将{$emaildomain}添加到邮箱白名单。否则可能收不到验证码</p>
 			</div>
 			<div class="modal-footer">
-				<p class="text-right"><a class="btn btn-pink waves-attach waves-effect" data-dismiss="modal">取消/Cancel</a></p>
-				<p class="text-right"><a class="btn btn-pink waves-attach waves-effect" id="sendcode">获取验证码/GetCode</a></p>
-				<p class="text-right"><a class="btn btn-pink waves-attach waves-light" data-dismiss="modal" id="mail_Continue">继续/Continue</a></p>
+				<p class="text-right"><a class="btn btn-brand waves-attach waves-effect" data-dismiss="modal">取消/Cancel</a></p>
+				<p class="text-right"><a class="btn btn-brand waves-attach waves-effect" id="sendcode">获取验证码/GetCode</a></p>
+				<p class="text-right"><a class="btn btn-brand waves-attach waves-light" data-dismiss="modal" id="mail_Continue">继续/Continue</a></p>
 			</div>
 		</div>
 	</div>
@@ -136,14 +136,14 @@
 			<div class="modal-inner margin-top-no margin-bottom-no">
 				<div class="form-group form-group-label margin-top-no margin-bottom-no">
 					<div class="row">
-						<div class="col-md-10 col-md-push-1" style="height: 300px;overflow: scroll;">>
+						<div class="col-md-10 col-md-push-1" style="height: 300px;overflow: scroll;">
 							{include file='tosbody.tpl'}
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="modal-footer">
-				<p class="text-right"><a class="btn btn-flat btn-pink waves-attach waves-effect" data-dismiss="modal" id="tos_calcel">取消/Cancel</a>&nbsp;<a class="btn btn-pink waves-attach waves-light" data-dismiss="modal" id="reg">继续/Continue</a></p>
+				<p class="text-right"><a class="btn btn-flat btn-brand waves-attach waves-effect" data-dismiss="modal" id="tos_calcel">取消/Cancel</a>&nbsp;<a class="btn btn-brand waves-attach waves-light" data-dismiss="modal" id="reg">继续/Continue</a></p>
 			</div>
 		</div>
 	</div>
@@ -157,7 +157,7 @@
 				<p class="h5 margin-top-sm text-black-hint" id="msg-success-p"></p>
 			</div>
 			<div class="modal-footer">
-				<p class="text-right"><a class="btn btn-pink waves-attach waves-effect" data-dismiss="modal">关闭/Discard</a></p>
+				<p class="text-right"><a class="btn btn-brand waves-attach waves-effect" data-dismiss="modal">关闭/Discard</a></p>
 			</div>
 		</div>
 	</div>
@@ -170,7 +170,7 @@
 				<p class="h5 margin-top-sm text-black-hint" id="msg-error-p"></p>
 			</div>
 			<div class="modal-footer">
-				<p class="text-right"><a class="btn btn-pink waves-attach waves-effect" data-dismiss="modal">关闭/Discard</a></p>
+				<p class="text-right"><a class="btn btn-brand waves-attach waves-effect" data-dismiss="modal">关闭/Discard</a></p>
 			</div>
 		</div>
 	</div>

@@ -1,6 +1,6 @@
 {include file='header.tpl'}
-<body class="page-pink">
-	<header class="header header-pink ui-header">
+<body class="page-brand">
+	<header class="header header-brand ui-header">
 		<ul class="nav nav-list pull-left">
 			<li>
 				<a data-toggle="menu" href="#ui_menu">
@@ -57,7 +57,7 @@
 										<div class="form-group">
 											<div class="row">
 												<div class="col-md-10 col-md-push-1">
-													<a class="btn btn-block btn-pink waves-attach waves-light" id="login">登录/Sign In</a>
+													<a class="btn btn-block btn-brand waves-attach waves-light" id="login">登录/Sign In</a>
 												</div>
 											</div>
 										</div>
@@ -78,8 +78,8 @@
 							</div>
 						</div>
 						<div class="clearfix">
-							<p class="margin-no-top pull-left"><a class="btn btn-pink waves-attach" href="/password/reset">忘记密码?</a></p>
-							<p class="margin-no-top pull-right"><a class="btn btn-pink waves-attach" href="/auth/register">注册一个账户</a></p>
+							<p class="margin-no-top pull-left"><a class="btn btn-brand waves-attach" href="/password/reset">忘记密码?</a></p>
+							<p class="margin-no-top pull-right"><a class="btn btn-brand waves-attach" href="/auth/register">注册一个账户</a></p>
 						</div>
 					</section>
 				</div>
@@ -88,7 +88,7 @@
 	</main>
 <footer class="ui-footer">
 	<div class="container">
-		<p></p>
+		<p>by hellotimo</p>
 	</div>
 </footer>
 
@@ -100,7 +100,7 @@
 				<p class="h5 margin-top-sm text-black-hint" id="msg-success-p"></p>
 			</div>
 			<div class="modal-footer">
-				<p class="text-right"><a class="btn btn-pink btn-brand-accent waves-attach" data-dismiss="modal" id="ok-close">关闭/Discard</a></p>
+				<p class="text-right"><a class="btn btn-brand waves-attach" data-dismiss="modal" id="ok-close">关闭/Discard</a></p>
 			</div>
 		</div>
 	</div>
@@ -113,7 +113,7 @@
 				<p class="h5 margin-top-sm text-black-hint" id="msg-error-p"></p>
 			</div>
 			<div class="modal-footer">
-				<p class="text-right"><a class="btn btn-pink btn-brand-accent waves-attach" data-dismiss="modal" id="error-close">关闭/Discard</a></p>
+				<p class="text-right"><a class="btn btn-brand waves-attach" data-dismiss="modal" id="error-close">关闭/Discard</a></p>
 			</div>
 		</div>
 	</div>
@@ -133,7 +133,7 @@
                     email: $("#email").val(),
                     passwd: $("#passwd").val(),
                     code: $("#code").val(),
-                    remember_me: $("#remember_me").val()
+                    remember_me: $("#remember_me")[0].checked ? $("#remember_me").val():''
                 },
                 success:function(data){
                     if(data.ret == 1){

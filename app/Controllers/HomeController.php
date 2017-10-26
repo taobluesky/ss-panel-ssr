@@ -39,7 +39,7 @@ class HomeController extends BaseController
                      ->assign('codes', $codes)
                      ->assign('msg', $msg)
                      ->assign('isrefon', $isref)
-                     ->display('index.tpl');
+                     ->display('index_v2.tpl');
     }
 
 

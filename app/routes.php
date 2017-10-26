@@ -33,9 +33,9 @@ $app->add(new WhoopsMiddleware);
 // Home
 $app->get('/', 'App\Controllers\HomeController:index');
 //$app->get('/code', 'App\Controllers\HomeController:index');
-$app->get('/tos', 'App\Controllers\HomeController:tos');
-$app->get('/debug', 'App\Controllers\HomeController:debug');
-$app->post('/debug', 'App\Controllers\HomeController:postDebug');
+///$app->get('/tos', 'App\Controllers\HomeController:tos');
+///$app->get('/debug', 'App\Controllers\HomeController:debug');
+///$app->post('/debug', 'App\Controllers\HomeController:postDebug');
 
 // User Center
 $app->group('/user', function () {
@@ -75,13 +75,14 @@ $app->group('/auth', function () {
 })->add(new Guest());
 
 // Password
+/*
 $app->group('/password', function () {
     $this->get('/reset', 'App\Controllers\PasswordController:reset');
     $this->post('/reset', 'App\Controllers\PasswordController:handleReset');
     $this->get('/token/{token}', 'App\Controllers\PasswordController:token');
     $this->post('/token/{token}', 'App\Controllers\PasswordController:handleToken');
 })->add(new Guest());
-
+*/
 // Admin
 $app->group('/admin', function () {
     $this->get('', 'App\Controllers\AdminController:index');
@@ -133,6 +134,7 @@ $app->group('/api', function () {
 });
 
 // mu
+/*
 $app->group('/mu', function () {
     $this->get('/users', 'App\Controllers\Mu\UserController:index');
     $this->post('/users/{id}/traffic', 'App\Controllers\Mu\UserController:addTraffic');
@@ -148,6 +150,7 @@ $app->group('/mu/v2', function () {
     $this->post('/nodes/{id}/info', 'App\Controllers\MuV2\NodeController:info');
     $this->post('/nodes/{id}/traffic', 'App\Controllers\MuV2\NodeController:postTraffic');
 })->add(new Mu());
+*/
 
 // res
 $app->group('/res', function () {

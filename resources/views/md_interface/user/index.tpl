@@ -1,6 +1,6 @@
 {include file='user/header.tpl'}
-<body class="page-pink">
-<header class="header header-pink header-waterfall ui-header">
+<body class="page-brand">
+<header class="header header-brand header-waterfall ui-header">
 		<ul class="nav nav-list pull-left">
 			<li>
 				<a data-toggle="menu" href="#ui_menu">
@@ -122,9 +122,9 @@
 								<div class="card-action">
 									<div class="card-action-btn pull-left">
 										{if $user->isAbleToCheckin() }
-				                            <a id="checkin" class="btn btn-pink waves-attach waves-light">签到</a>
+				                            <a id="checkin" class="btn btn-brand waves-attach waves-light">签到</a>
 				                        {else}
-				                            <a class="btn btn-pink waves-attach waves-light disabled">不能签到</a>
+				                            <a class="btn btn-brand waves-attach waves-light disabled">不能签到</a>
 				                        {/if}
 									</div>
 								</div>
@@ -186,14 +186,14 @@
 													</div>
 													<div class="card-action">
 														<div class="card-action-btn pull-left">
-															<a class="btn btn-pink waves-attach waves-light waves-effect" data-backdrop="static" data-toggle="modal" href="#ui_dialog_node_{$node->id}">详细信息/More</a>
+															<a class="btn btn-brand waves-attach waves-light waves-effect" data-backdrop="static" data-toggle="modal" href="#ui_dialog_node_{$node->id}">详细信息/More</a>
 														</div>
                                                         
                                                         <div class="card-action-btn pull-left">
                                                             {if $user->hasSsrSetting()}
-															<a id="quick_node_ssrqrcode_{$node->id}" class="btn btn-pink waves-attach waves-light waves-effect" data-backdrop="static" >扫二维码/SCAN QR</a>
+															<a id="quick_node_ssrqrcode_{$node->id}" class="btn btn-brand waves-attach waves-light waves-effect" data-backdrop="static" >扫二维码/SCAN QR</a>
                                                             {else}
-                                                            <a id="quick_node_qrcode_{$node->id}" class="btn btn-pink waves-attach waves-light waves-effect" data-backdrop="static" >扫二维码/SCAN QR</a>
+                                                            <a id="quick_node_qrcode_{$node->id}" class="btn btn-brand waves-attach waves-light waves-effect" data-backdrop="static" >扫二维码/SCAN QR</a>
                                                             {/if}
 														</div>
 													</div>
