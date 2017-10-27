@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta content="IE=edge" http-equiv="X-UA-Compatible">
-	<meta name="theme-color" content="#f25d8e">
+	<meta name="theme-color" content="#3f51b5">
 	<meta content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width" name="viewport">
 	<title>{$config["appName"]}</title>
 
